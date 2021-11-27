@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="input" style="margin: 15px;">
+        <input type="text" placeholder="Add Todo" [(ngModel)] = 'input' style="margin-bottom: 15px;">
+        <br/>
+        <button (click)="add()" style="width: 160px; border: none; background-color: green;    height: 35px;
+        color: white;">Add Todo</button>
+    </div>
+    <div class="main-app" *ngFor="let todo of todos; let i = index">
+       <ul>
+           <li> {{todo.content}}</li>
+           <button class="remove" (click)="delete(i)" style="background-color: red; color: white;">Remove</button>
+           <input type="text" placeholder="Update Todo" [(ngModel)]= 'updateInput'>
+           <button class="update" (click)="update(i)" style="width: 160px; border: none; background-color:blue; color: white;">Update</button>
+           <br/>
+       </ul>
+    </div>
+</div>

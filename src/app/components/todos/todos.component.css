@@ -1,0 +1,20 @@
+.main-app ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: larger;
+}
+.main-app button{
+    border: none;
+    width: 100px;
+    height: 40px;
+}
+.main-app button ul li .remove{
+    background-color: red;
+}
+.main-app .input{
+    max-width: 500px;
+    display: grid;
+    gap: 10px;
+    margin-bottom: 15px;
+}
